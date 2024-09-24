@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Electronic Market</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="w3-container" style="padding: 0;height: 100%;">
+        <div class="sidebar">
+            <h2 href="index.html" class="sidebar_title"><a href="index.html">AXOLOTL</a></h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="active accordion" ><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
+                <div class="panel">
+                    <ul class="accordion_list">
+                        <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>SHOP</a></li>
+                        <li><a href="category_all_item.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
+                        <li><a href="catalog_new_arrival.html"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
+                        <li><a href="catalog_discount.html"><i class="fas fa-percent"></i>DISCOUNT</a></li>
+                        <li><a href="catalog_categories.html"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                    </ul>
+                </div>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
+                <li style="position: fixed;bottom: 0;width: 225px;"><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="w3-container content">
+            <div class="header">
+            </div>
+            <!-- Wajib Ada dan Lihat Stack Programnya -->
+            <div class="w3-container w3-mobile breadcrumb">
+                <ul class="breadcrumbs">
+                    <li>></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a href="catalog.html">Shop</a></li>
+                    <li>/</li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <!-- PRODUCT CATEGORIES-->
+                <div class="titleproduct">
+                    <h2 class="title" id="categories"><b>CATEGORIES</b></h2>
+                </div>
+                <!-- Fitur Sorting Filter-->
+                <div class="dropdown">
+                    <button class="dropbtn">Filter By
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">A..Z</a>
+                        <a href="#">Z..A</a>
+                    </div>
+                </div> 
+                <!-- Type Categories row -->
+                <div class="product">
+                    <!-- Column 1 -->
+                    <div class="itemproduct w3-padding w3-card" >
+                        <div class="image-content">
+                            <img src="../img/product/b.jpg" class="imgitemproduct">
+                        </div>
+                        <div class="product_detail">
+                            <p class="product_detail_title"><b>PSU</b></p>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="itemproduct w3-padding w3-card">
+                        <div class="image-content" style="margin-top: 40px;margin-bottom: -40px;">
+                            <img src="../img/product/a.png" class="imgitemproduct">
+                        </div>
+                        <div class="product_detail">
+                            <p class="product_detail_title"><b>GPU</b></p>
+                        </div>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="itemproduct w3-padding w3-card" onclick="window.location='category_case.html'">
+                        <div class="image-content">
+                            <img src="../img/product/c.png" class="imgitemproduct">
+                        </div>
+                        <div class="product_detail">
+                            <p class="product_detail_title"><b>CASE</b></p>
+                        </div>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="itemproduct w3-padding w3-card">
+                        <div class="image-content" style="margin-top: 60px;margin-bottom: -60px;">
+                            <img src="../img/product/d.png" class="imgitemproduct">    
+                        </div>
+                        <div class="product_detail">
+                            <p class="product_detail_title"><b>LAPTOP</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a>...</a>
+                    <a href="#">99</a>
+                    <a href="#">Last</a>
+                    <a href="#">&raquo;</a>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="about_axolotl">
+                    <h3 class="title_about_axolotl" style="margin-top: 10px; margin-bottom: 10px;">About Axolotl</h3>
+                    <a href="about.html">About Axolotl</a><br><br>
+                    <a>Language :</a>
+                    <a style="margin-left: 0;">English</a>
+                    <a style="margin-left: 0;"> | </a>
+                    <a style="margin-left: 0;">Indonesia</a>
+                </div>
+                <div class="social_media">
+                    <h3 class="title_about_axolotl">Follow us On</h3>
+                    <div class="social_images" style="margin-left:180px;">
+                        <img src="../img/facebook_logo.png" class="imgitemproduct">
+                    </div>
+                    <div class="social_images">
+                        <img src="../img/instagram_logo.png" class="imgitemproduct">
+                    </div>
+                    <div class="social_images">
+                        <img src="../img/twitter_logo.png" class="imgitemproduct">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <h2 class="title_about_axolotl" style="margin-top: 40px; margin-bottom: 0px;">AXOLOTL</h2>
+                    <p class="title_about_axolotl">Copyright 2020 Axolotl. All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/script.js"></script>
+<script>
+// accordion for sidebar
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Electronic Market</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="w3-container" style="padding: 0;height: 100%;">
+        <div class="sidebar">
+            <h2 href="index.html" class="sidebar_title"><a href="index.html">AXOLOTL</a></h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="active accordion" ><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
+                <div class="panel">
+                    <ul class="accordion_list">
+                        <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>SHOP</a></li>
+                        <li><a href="category_all_item.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
+                        <li><a href="catalog_new_arrival.html"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
+                        <li><a href="catalog_discount.html"><i class="fas fa-percent"></i>DISCOUNT</a></li>
+                        <li><a href="catalog_categories.html"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                    </ul>
+                </div>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
+                <li style="position: fixed;bottom: 0;width: 225px;"><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="info single-product w3-container">
+            <!-- Wajib Ada dan Lihat Stack Programnya -->
+            <div class="w3-container w3-mobile breadcrumb" style="margin-bottom: 50px;margin-left: 30px;margin-top: -40px;">
+                <ul class="breadcrumbs">
+                    <li>></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a href="catalog.html">Shop</a></li>
+                    <li>/</li>
+                    <li><a href="catalog_categories.html">Categories</a></li>
+                    <li>/</li>
+                    <li><a href="category_case.html">Case</a></li>
+                    <li>/</li>
+                    <li><a href="#">NZXT H510i Red Casing</a></li>
+                </ul>
+            </div>
+            <div class="w3-container">
+                <div class="row" >
+                    <div class="single-img w3-padding" style="margin-right: 30px;">
+                        <div class="w3-container">
+                            <img src="../img/product/c.png" class="imgitemproduct myImage" id="myImg">
+                        </div>
+                        <div class="single-img w3-padding">
+                            <img src="../img/product/c1.png" class="imgitemproduct myImage" id="myImg">
+                        </div>
+                        <div class="single-img w3-padding">
+                            <img src="../img/product/c2.png" class="imgitemproduct myImage" id="myImg">
+                        </div>
+                        <div class="single-img w3-padding">
+                            <img src="../img/product/c3.png" class="imgitemproduct myImage" id="myImg">
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <div class="col-2 product_details">
+                        <h1>NZXT H510i Red Casing</h1>
+                        <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 7 Reviews</p>
+                        <h4>Rp 1.999.000</h4>
+                        
+                        <input type="number" value="1" class="input_number">
+                        <a href="" type="submit" class="btn" onclick="addedItem()">Add To Cart <i class="fa fa-shopping-cart"></i></a>
+    
+                        <h3>Product Detail <i class="fa fa-indent"> </i></h3>
+                        <br>
+                        <p>We’ve made our iconic H Series PC cases even better. Our new lineup still features the 
+                            elements builders loved in the original H Series, including our patented cable management
+                            system, removable fan/radiator mounting brackets, and easy-to-use drive trays, alongside
+                            new updates like a front-panel USB-C connector supporting high-speed USB 3.1 Gen 2 
+                            devices, a tempered glass side panel that installs with a single thumbscrew, and an 
+                            upgraded Smart Device V2 on the H510i.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" info social w3-container">
+                <h3>Share Product To</h3>
+                <div class="social_images" style="margin-left: 0px;">
+                    <img src="../img/facebook_logo.png" class="imgitemproduct">
+                </div>
+                <div class="social_images">
+                    <img src="../img/instagram_logo.png" class="imgitemproduct">
+                </div>
+                <div class="social_images">
+                    <img src="../img/twitter_logo.png" class="imgitemproduct">
+                </div>
+            </div>
+            <div class=" info product-review w3-container">
+                <div>
+                    <h3>Product Review</h3>
+                    <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 7 reviews</p>
+                </div>
+                <br>
+                <div class="review-container">
+                    <div class="review-item w3-padding w3-card">
+                        <div class="review-person">
+                            <img src="../img/person.png" class="imgitemproduct" style="margin-top: 90px;margin-left: 5px;">
+                        </div>
+                        
+                        <div class="desc w3-card">
+                            <h4>Great product, Great Quality, Fast Shipping</h4>
+                            <img src="../img/review/nzxt_1.jpg" class="image_review myImage" style="padding: 5px;">
+                            <img src="../img/review/nzxt_1.jpg" class="image_review myImage" style="padding: 5px;">
+                            <p class="product_detail_price rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  5.0 / 5.0</p>
+                            <h5>John Doe</h5>
+                            <p>Emejing Product. Would buy again 10/10</p>
+                        </div>
+
+                    </div>
+                    <div class="review-item w3-padding w3-card">
+                        <div class="review-person">
+                            <img src="../img/person.png" class="imgitemproduct" style="margin-top: 90px;margin-left: 5px;">
+                        </div>
+                        
+                        <div class="desc w3-card">
+                            <h4>Another great product from NZXT</h4>
+                            <img src="../img/review/nzxt_4.jpg" class="image_review myImage" style="padding: 5px;">
+                            <p class="product_detail_price rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  5.0 / 5.0</p>
+                            <h5>T****n</h5>
+                            <p>I watercooled my PC with this product. Then, post it on Reddit and get so many upvotes</p>
+                        </div>
+
+                    </div>
+                    <div class="w3-container">
+                        <a href="product_review.html">See more <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="info similar-product w3-container">
+                <div>
+                    <h3>
+                        Similar Product
+                    </h3>
+                </div>
+                <br>
+                <div class="similar-product">
+                    <div class="">
+                    <!-- Column 1 -->
+                        <div class="itemproduct w3-padding w3-card" >
+                            <div class="image-content">
+                                <img src="../img/product/b.jpg" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>Corsair HX850 PSU</b></p>
+                                <p class="product_detail_price">Rp 2.999.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 4.8 / 5.0 <b>|</b> 427 reviews</p>
+                            </div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="itemproduct w3-padding w3-card">
+                            <div class="image-content" style="margin-top: 40px;margin-bottom: -40px;">
+                                <img src="../img/product/a.png" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>NVIDIA GeForce RTX 3080</b></p>
+                                <p class="product_detail_price">Rp 13.450.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 4.9 / 5.0 <b>|</b> 411 reviews</p>
+                            </div>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="itemproduct w3-padding w3-card">
+                            <div class="image-content">
+                                <img src="../img/product/c.png" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>NZXT H510i Red</b></p>
+                                <p class="product_detail_price">Rp 1.999.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 7 reviews</p>
+                            </div>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="itemproduct w3-padding w3-card">
+                            <div class="image-content" style="margin-top: 60px;margin-bottom: -60px;">
+                                <img src="../img/product/d.png" class="imgitemproduct">    
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>Alienware M17 R5</b></p>
+                                <p class="product_detail_price">Rp 17.499.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 4.1 / 5.0 <b>|</b> 3 reviews</p>
+                            </div>
+                        </div>
+                        <!-- Column 1 -->
+                        <div class="itemproduct w3-padding w3-card" >
+                            <div class="image-content">
+                                <img src="../img/product/e.png" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>XMG APEX 15</b></p>
+                                <p class="product_detail_price">Rp 18.499.000</p>
+                                <p class="product_detail_price rating">No Rating Yet</p>
+                            </div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="itemproduct w3-padding w3-card">
+                            <div class="image-content">
+                                <img src="../img/product/f.png" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>MSI X570 Tomahawk Wi-Fi</b></p>
+                                <p class="product_detail_price">Rp 3.999.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 192 reviews</p>
+                            </div>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="itemproduct w3-padding w3-card">
+                            <div class="image-content">
+                                <img src="../img/product/g.png" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>ASUS ROG GL753</b></p>
+                                <p class="product_detail_price">Rp 15.699.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 98 reviews</p>
+                            </div>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="itemproduct w3-padding w3-card">
+                            <div class="image-content" style="margin-top: 40px;margin-bottom: -40px;">
+                                <img src="../img/product/h.png" class="imgitemproduct">
+                            </div>
+                            <div class="product_detail">
+                                <p class="product_detail_title"><b>Ryzen 5 5600X</b></p>
+                                <p class="product_detail_price">Rp 5.199.000</p>
+                                <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 1.799 reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="float: none;padding-left: 200px;">
+            <div class="about_axolotl" style="width: 32%;">
+                <h3 class="title_about_axolotl" style="margin-top: 10px; margin-bottom: 10px;">About Axolotl</h3>
+                <a href="about.html">About Axolotl</a><br><br>
+                <a>Language :</a>
+                <a style="margin-left: 0;">English</a>
+                <a style="margin-left: 0;"> | </a>
+                <a style="margin-left: 0;">Indonesia</a>
+            </div>
+            <div class="social_media" style="width: 32%;">
+                <h3 class="title_about_axolotl">Follow us On</h3>
+                <div class="social_images" style="margin-left:180px;">
+                    <img src="../img/facebook_logo.png" class="imgitemproduct">
+                </div>
+                <div class="social_images">
+                    <img src="../img/instagram_logo.png" class="imgitemproduct">
+                </div>
+                <div class="social_images">
+                    <img src="../img/twitter_logo.png" class="imgitemproduct">
+                </div>
+            </div>
+            <div class="copyright" style="width: 32%;">
+                <h2 class="title_about_axolotl" style="margin-top: 40px; margin-bottom: 0px;">AXOLOTL</h2>
+                <p class="title_about_axolotl">Copyright 2020 Axolotl. All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script type="text/javascript" src="../js/script.js"></script>
+<script> 
+
+// accordion for sidebar
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImage');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+</script>
+</html>
